@@ -1,11 +1,11 @@
-!pip install openai
+pip install openai
 
 import os
 import openai
 import streamlit as st
 
 # Connect to OpenAI API
-openai.api_key = os.environ.get("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")
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Define the GPT-3 function to generate the cover letter
 def generate_cover_letter(model, prompt, length):
